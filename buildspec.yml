@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install: 
+    commands:
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+  build:
+    commands:
+      - pip install -r requirements.txt --upgrade --target=./deps/
+artifacts:
+  files:
+    - 'common/**/*'
+    - 'core/**/*'
+    - 'rt/**/*'
+    - 'data/**/*'
+    - 'templates/**/*'
+    - 'handler.py'
+    - 'manage.py'
+    - 'requirements.txt'
+  name: rt-client-lambda

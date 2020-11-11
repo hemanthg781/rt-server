@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+.vscode
+node_modules
+*.tfstate
+*.tfstate.backup
+shared-local-instance.db
+venv
+.venv
+**/*.pyc
+__pycache__
+.terraform
+.coverage
+htmlcov/
+test_logs.txt
+db.sqlite3
+static/
